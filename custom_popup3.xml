@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="500dp"
+    android:background="#000"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have a new ride request!"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="24sp"
+        android:textColor="@color/quantum_googredA700"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/navigate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:text="Navigate"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_navigation_black_24dp"
+        android:background="@drawable/custombuttons"/>
+
+    <Button
+        android:id="@+id/callRider"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:text="Call Rider"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_call_black_24dp"
+        android:background="@drawable/custombuttons"/>
+
+    <Button
+        android:id="@+id/smsRider"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:text="Whatsapp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/chat_white"
+        android:background="@drawable/custombuttons"/>
+
+    <Button
+        android:id="@+id/driverCancel"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:text="Cancel Request"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_cancel"
+        android:background="@color/quantum_googred"/>
+
+</LinearLayout>

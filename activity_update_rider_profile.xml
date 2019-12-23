@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/riderbg"
+    tools:context=".UpdateRiderProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#004d40"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backButton2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/update_profile"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Riderprofilepic"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/user" />
+
+    <EditText
+        android:id="@+id/ChangeRiderName"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/ChangeRiderTel"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:hint="@string/mobile_number"
+        android:drawableLeft="@drawable/ic_call_black_24dp"
+        android:inputType="phone"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/ChangeRiderUserName"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/ic_person_pin_black_24dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:drawablePadding="10dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/ChangeRiderUniv"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:hint="@string/university"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_account_balance_black_24dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/warning"
+        android:text="@string/warning"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/saveRiderUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/custombuttons3"
+        android:text="@string/save"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

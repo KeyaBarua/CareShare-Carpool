@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/driverTracking"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DriverTracking" />
+
+    <Button
+        android:id="@+id/rideCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text=" Cancel Ride"
+        android:drawableLeft="@drawable/ic_cancel"
+        android:background="@color/quantum_googred"
+        android:textColor="#FFF"
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/rideComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text=" Complete Ride"
+        android:drawableLeft="@drawable/ic_check"
+        android:background="@color/colorGreen"
+        android:textColor="#FFF"
+        android:padding="10dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
